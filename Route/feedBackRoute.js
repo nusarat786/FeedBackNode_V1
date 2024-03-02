@@ -52,7 +52,7 @@ router.post("/add-feedback",async (req,res)=>{
 
 
 // GET endpoint to retrieve feedbacks with pagination and average rating
-router.get("/get-feedback", auth, async (req, res) => {
+router.get("/get-feedback", async (req, res) => {
     try {
       const page = parseInt(req.query.page) || 1;
   
@@ -93,7 +93,7 @@ router.get("/get-feedback", auth, async (req, res) => {
 
 
 // GET endpoint to retrieve feedbacks with pagination, filtering by rating, and average rating
-router.get("/get-feedback-rating", auth, async (req, res) => {
+router.get("/get-feedback-rating", async (req, res) => {
     try {
       const page = parseInt(req.query.page) || 1;
       const ratingFilter = parseInt(req.query.rating) || 5; // Set default rating to 5 if not provided
