@@ -29,8 +29,8 @@ app.use(express.json());
 // cookie parser
 app.use(cookieParser());
 
-// cors 
-app.use(cors({ credentials: true, origin: 'https://fff-eh6g.onrender.com/' }));
+// 
+app.use(cors({ credentials: true, origin: 'https://fff-eh6g.onrender.com' }));
 
 
 // using tweet routes
