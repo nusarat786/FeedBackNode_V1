@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // cors 
-app.use(cors({ credentials: true, origin: 'http://127.0.0.1:5502/' }));
+app.use(cors({ credentials: true, origin: 'https://fff-eh6g.onrender.com/' }));
 
 
 // using tweet routes
